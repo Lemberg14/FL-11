@@ -1,5 +1,81 @@
-/*
+@media screen {
+    
+}
+@media print { 
+    body {
+        padding: 0px;
+    }
 
-write your code here
+    .tm-main-content {
+        padding-top: 0px;
+    }
+    .tm-sidebar, .tm-team-img, #about, .boxes, .img-contact-us, #contact {
+        display: none;
+    }
 
-*/
+   #contact {
+       display: none;
+   }
+
+   .tm-banner {
+       padding: 0px;
+   }
+   .heading {
+     
+   }
+
+   .flex-item {
+       padding: 0;
+       text-align: center;
+   }
+
+   .flex-item h2 { 
+        color: lightskyblue;
+        font-size: 2rem;
+        
+        
+   }
+
+   .flex-item p {
+    
+   }
+
+   #tmCarousel {
+       
+   }
+
+   .tm-content-box {
+    margin : 0;
+    padding: 0;
+   }
+
+   .tm-footer {
+       padding-top: 61%; 
+   }
+
+   .tm-team-description-container {
+    max-width: 100%;
+   }
+
+   .tm-section-description {
+       text-align: center;
+       font-size: 11px;
+   }
+
+   .padding-medium ol {
+       list-style-type: none;
+   }
+
+   .padding-medium li::first-letter {
+       color: blue;
+       font-size: 24px;
+   }
+
+   .padding-medium li:nth-child(even) {
+       float : right;
+   }
+
+   }
+   @page {
+       size : A4;
+ }
