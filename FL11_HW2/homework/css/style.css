@@ -1,7 +1,16 @@
 @media screen {
-    
+    #about a {
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    #about h2:hover {
+        background-color: lightskyblue;
+        color: white;
+    }
+
 }
 @media print { 
+
     body {
         padding: 0px;
     }
@@ -9,19 +18,19 @@
     .tm-main-content {
         padding-top: 0px;
     }
-    .tm-sidebar, .tm-team-img, #about, .boxes, .img-contact-us, #contact {
+
+    .tm-sidebar,
+    .tm-team-img,
+    #about,
+    .boxes,
+    .img-contact-us,
+    #contact,
+    .carousel-indicators {
         display: none;
     }
 
-   #contact {
-       display: none;
-   }
-
    .tm-banner {
        padding: 0px;
-   }
-   .heading {
-     
    }
 
    .flex-item {
@@ -32,16 +41,7 @@
    .flex-item h2 { 
         color: lightskyblue;
         font-size: 2rem;
-        
-        
-   }
-
-   .flex-item p {
-    
-   }
-
-   #tmCarousel {
-       
+        text-transform: uppercase;
    }
 
    .tm-content-box {
@@ -50,7 +50,7 @@
    }
 
    .tm-footer {
-       padding-top: 61%; 
+       padding-top: 60px; 
    }
 
    .tm-team-description-container {
@@ -64,18 +64,38 @@
 
    .padding-medium ol {
        list-style-type: none;
+       margin-left: 200px;
+       margin-right: 200px;
+   }
+
+   .padding-medium a {
+    color: black;
+   }
+
+   .padding-medium h2 {
+       color: lightskyblue;
+       text-align: center;
    }
 
    .padding-medium li::first-letter {
-       color: blue;
+       color: lightskyblue;
        font-size: 24px;
    }
 
    .padding-medium li:nth-child(even) {
        float : right;
+       line-height: 1;  
+   }
+
+   .padding-medium li:nth-child(odd) {
+    line-height: 4;  
+   }
+
+   .padding-medium {
+       padding: 0;
    }
 
    }
-   @page {
+@page {
        size : A4;
  }
